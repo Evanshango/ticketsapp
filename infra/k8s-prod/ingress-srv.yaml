@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: 'true'
 spec:
   rules:
-    - host: ticketsapp.test
+    - host: ticketsapp.test # to be modified after acquiring an actual domain
       http:
         paths:
           - path: /api/payments/?(.*)
