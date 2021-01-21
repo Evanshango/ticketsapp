@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const LandingPage = ({user, tickets}) => {
+const LandingPage = ({tickets}) => {
 
     const ticketList = tickets.map(ticket => (
         <tr key={ticket.id}>
@@ -17,7 +17,7 @@ const LandingPage = ({user, tickets}) => {
 
     return (
         <div className='p-3'>
-            <p><b>Welcome</b> | {user.email}</p>
+            {/*<p><b>Welcome</b>{user.email}</p>*/}
             <h4 className='p-3'>Available Tickets</h4>
             <table className="table">
                 <thead>
